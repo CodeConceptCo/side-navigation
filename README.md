@@ -5,10 +5,16 @@
 
 ![Demo](https://res.cloudinary.com/codeconcept/image/upload/v1531479054/navigation.gif)
 
-## Instalation
+### Source file
 
 ```
-npm i --save codeconcept-slide-nav
+index.css
+```
+
+### Development file
+
+```
+app/styles/components/sideNavigation.scss
 ```
 
 ## Local development

@@ -1,0 +1,36 @@
+{
+  "name": "codeconcept-slide-nav",
+  "version": "1.0.0",
+  "description": "CodeConcept side navigation concept with sliding animation",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel app/index.html",
+    "build": "parcel build app/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:CodeConceptCo/side-navigation.git"
+  },
+  "keywords": [
+    "CodeConcept",
+    "codeconcept",
+    "CodeConceptCo",
+    "navigation",
+    "navigation concept",
+    "navigation animation",
+    "side navigation",
+    "side navigation animation"
+  ],
+  "author": "freeman14",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeConceptCo/side-navigation/issues"
+  },
+  "homepage": "https://github.com/CodeConceptCo/side-navigation#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.9.6"
+  }
+}

@@ -30,7 +30,7 @@
         li {
             margin-right: 10px;
             &:first-child {
-                border-right: 1px solid rgba(0, 0, 0, 0.54);
+                // border-right: 1px solid rgba(0, 0, 0, 0.54);
                 padding-right: 10px;
             }
         }
@@ -41,6 +41,15 @@
                 color: #000;
             }
         }
+    }
+}
+
+.unsplash {
+    padding-left: 25px;
+    margin-bottom: 0;
+    a {
+        color: #000;
+        text-decoration: underline;
     }
 }
 

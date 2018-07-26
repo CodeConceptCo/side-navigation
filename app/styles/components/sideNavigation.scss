@@ -1,5 +1,7 @@
 $animation-time: 0.2s;
 $animation-delay: 0.2s;
+
+$image-animation-time: 0.3s;
 .side__navigation-wrapper {
   height: 100%;
   display: flex;
@@ -25,8 +27,59 @@ $animation-delay: 0.2s;
     display: flex;
     align-items: center;
   }
+  .side__navigation-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translate(-100%, 0);
+    transition: all $animation-time;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .side__navigation-image--section {
+    width: 10%;
+    position: absolute;
+    right: 10%;
+    height: 10%;
+    transition: all $image-animation-time;
+    transition-delay: $animation-delay;
+  }
+  .section__1 {
+    background: url(https://images.unsplash.com/photo-1531920444849-67d39169a621?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a909e676cc6c0ad0289c12a792f6d3b7&auto=format&fit=crop&w=802&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section__2 {
+    background: url(https://images.unsplash.com/photo-1515940946701-731c68c86501?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c211dfd93639ddeecf6f0913c45bba3&auto=format&fit=crop&w=1707&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section__3 {
+    background: url(https://images.unsplash.com/photo-1506176360200-2a27352ff907?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjF9&s=07956714ac91d3997115a37ed8d275e2&auto=format&fit=crop&w=668&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section__4 {
+    background: url(https://images.unsplash.com/photo-1505259341540-280be642cfaa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9a116a600c5ac0e6723c52690a713ef&auto=format&fit=crop&w=2734&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .side__navigation-item {
     &:hover {
+      .side__navigation-image {
+        transform: translate(-70%, 0);
+      }
+      .side__navigation-image--section {
+        width: 30%;
+        height: 100%;
+        right: 0;
+      }
       @media screen and (min-width: 768px) {
         .side__navigation-link--default {
           transform: translate(100%, 0);
